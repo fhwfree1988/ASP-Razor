@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ASPSampleRazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f5258e91fd832ab7a43605b6b8d893581f0f6ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("ASPSampleRazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ASPSampleRazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
