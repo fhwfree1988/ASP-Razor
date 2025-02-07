@@ -21,7 +21,7 @@ namespace ASPSampleRazor.Views.Student
         }
 
         [BindProperty]
-        public StudentModel Student { get; set; } = default!;
+        public StudentModel StudentModel { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -30,12 +30,12 @@ namespace ASPSampleRazor.Views.Student
                 return NotFound();
             }
 
-            var student =  await _context.Students.FirstOrDefaultAsync(m => m.Id == id);
-            if (student == null)
+            var studentmodel =  await _context.Students.FirstOrDefaultAsync(m => m.Id == id);
+            if (studentmodel == null)
             {
                 return NotFound();
             }
-            Student = student;
+            StudentModel = studentmodel;
             return Page();
         }
 
@@ -48,7 +48,7 @@ namespace ASPSampleRazor.Views.Student
                 return Page();
             }
 
-            _context.Attach(Student).State = EntityState.Modified;
+            _context.Attach(StudentModel).State = EntityState.Modified;
 
             try
             {
@@ -56,7 +56,7 @@ namespace ASPSampleRazor.Views.Student
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!StudentExists(Student.Id))
+                if (!StudentModelExists(StudentModel.Id))
                 {
                     return NotFound();
                 }
@@ -69,7 +69,7 @@ namespace ASPSampleRazor.Views.Student
             return RedirectToPage("./Index");
         }
 
-        private bool StudentExists(int id)
+        private bool StudentModelExists(int id)
         {
             return _context.Students.Any(e => e.Id == id);
         }

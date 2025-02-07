@@ -19,11 +19,11 @@ namespace ASPSampleRazor.Views.Student
             _context = context;
         }
 
-        public IList<Student> Student { get;set; } = default!;
+        public IList<StudentModel> StudentModel { get;set; } = default!;
 
         public async Task OnGetAsync()
         {
-            Student = await _context.Students.ToListAsync();
+            StudentModel = await _context.Students.ToListAsync();
         }
     }
 }
