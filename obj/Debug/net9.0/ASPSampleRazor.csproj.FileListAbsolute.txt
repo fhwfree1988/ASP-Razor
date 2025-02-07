@@ -327,3 +327,4 @@ D:\Foad\BehinAfzar\ASPSampleRazor\ASPSampleRazor\obj\Debug\net9.0\refint\ASPSamp
 D:\Foad\BehinAfzar\ASPSampleRazor\ASPSampleRazor\obj\Debug\net9.0\ASPSampleRazor.pdb
 D:\Foad\BehinAfzar\ASPSampleRazor\ASPSampleRazor\obj\Debug\net9.0\ASPSampleRazor.genruntimeconfig.cache
 D:\Foad\BehinAfzar\ASPSampleRazor\ASPSampleRazor\obj\Debug\net9.0\ref\ASPSampleRazor.dll
+D:\Foad\BehinAfzar\ASPSampleRazor\ASPSampleRazor\obj\Debug\net9.0\ASPSampleRazor.sourcelink.json
